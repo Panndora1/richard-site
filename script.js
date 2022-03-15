@@ -12,6 +12,13 @@ menuBurger.addEventListener('click', () => {
     span.classList.toggle('open_menu');
     menu.classList.toggle('open_menu');
     body.classList.add('fixed');
+
+    if (body.classList.contains('fixed')) {
+        menu.style.display = `block`;
+    } else {
+        menu.style.display = `none`;
+    }
+    
 })
 
 function closeMenu() {
@@ -19,6 +26,7 @@ function closeMenu() {
     menuBurger.classList.remove('open_menu');
     span.classList.remove('open_menu');
     menu.classList.remove('open_menu');
+    menu.style.display = `none`;
 }
 
 menuLink.forEach((el) => el.addEventListener('click', closeMenu))

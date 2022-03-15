@@ -77,6 +77,7 @@
     }
 
     .header__nav {
+        display: none;
         position: absolute;
         right: -100%;
         top: 80px;
@@ -359,6 +360,16 @@
     align-self: center;
 }
 
+@media (max-width: 768px) {
+    .about__container:first-child {
+        padding-top: 15%;
+    }
+
+    .about__text {
+        margin-bottom: 10px;
+    }
+}
+
 .benefits__container {
     display: flex;
     justify-content: center;
@@ -405,6 +416,23 @@
     text-align: center;
 }
 
+/* benefits tablet */
+
+@media (max-width: 768px) {
+    .benefits__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10% 0;
+    }
+
+    .benefits__img {
+        max-width: 50px;
+        margin-bottom: 5%;
+    }
+}
+
 .numbers__container {
     display: flex;
     justify-content: space-around;
@@ -427,6 +455,33 @@
     text-align: center; 
     color: #333333;
     padding-bottom: 10px;
+}
+
+/* numbers tablet */
+
+@media (max-width: 768px) {
+    .numbers__container {
+        padding: 0;
+        padding-bottom: 80px;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .numbers__item {
+        width: 50%;
+    }
+
+    .numbers__title {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .numbers__item {
+        width: 100%;
+    }
 }
 
 .menu__container {
@@ -459,6 +514,54 @@
     width: 50%;
     max-width: 519px;
     height: auto;
+}
+
+/* menu tablet */
+
+@media (max-width: 768px) {
+    .menu__container {
+        flex-direction: column;
+        padding-bottom: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__container:nth-child(2n) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__description,
+    .menu__description:nth-child(2n) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .menu__description:nth-child(2n),
+    .menu__description:nth-child(1n) {
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu__text,
+    .menu__title {
+        align-self: center;
+    }
+
+    .menu__text {
+        padding: 10px;
+    }
+
+    .menu__desc {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .menu__img {
+        width: 80%;
+    }
 }
 
 .quote__container {
