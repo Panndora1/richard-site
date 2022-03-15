@@ -12,12 +12,15 @@
     <header class="header">
         <div class="header__container">
             <img src="./docs/logo.png" alt="logo" class="header__logo">
+            <div class="menu_burger">
+                <span class="menu_burger__span"></span>
+            </div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="" class="header__link">About</a></li>
-                    <li class="header__item"><a href="" class="header__link">Features</a></li>
-                    <li class="header__item"><a href="" class="header__link">How to Use</a></li>
-                    <li class="header__item"><a href="" class="header__link">Download</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">About</a></li>
+                    <li class="header__item"><a href="#benefits" class="header__link">Features</a></li>
+                    <li class="header__item"><a href="#menu" class="header__link">How to Use</a></li>
+                    <li class="header__item"><a href="#offer" class="header__link">Download</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,7 +60,7 @@
                     <p class="about__desc desc right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>
             </div>
-            <div class="about__container">
+            <div class="about__container" id="about">
                 <div class="about__description">
                     <p class="about__text text">Aenean Consectetur Porta</p>
                     <h2 class="about__title title">Magna Porta Sit Bibendum</h2>
@@ -66,7 +69,7 @@
                 <img src="./docs/Frame3.png" alt="frame" class="about__img">
             </div>
         </section>
-        <section class="benefits">
+        <section class="benefits" id="benefits">
             <div class="benefits__container">
                 <div class="benefits__item">
                     <img src="./docs/1.svg" alt="burger" class="benefits__img">
@@ -105,7 +108,7 @@
                 </div>
             </div>
         </section>
-        <section class="menu">
+        <section class="menu" id="menu">
             <div class="menu__container">
                 <div class="menu__description">
                     <p class="menu__text text">Aenean Consectetur Porta</p>
@@ -142,7 +145,7 @@
         <section class="image">
             <img src="./docs/phone.png" alt="phones" class="image__img">
         </section>
-        <section class="offer">
+        <section class="offer" id="offer">
             <div class="offer__section">
                 <h3 class="offer__title">Ready to get started?</h3>
                 <div class="offer__buttons">
@@ -176,6 +179,7 @@
                 </ul>
             </nav>
         </div>
-    </footer>    
+    </footer>   
+    <script src="./script.js"></script> 
 </body>
 </html>
